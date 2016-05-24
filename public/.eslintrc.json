@@ -1,0 +1,30 @@
+{
+  "parserOptions": {
+    "ecmaVersionX": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": false,
+    "browser": true,
+    "es6": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "../.eslintrc.json"
+  ],
+  "rules": {
+    "react/prop-types": "off"
+  },
+  "globals": {
+    "React": true,
+    "ReactDOM": true,
+    "io": true,
+    "$": true
+  }
+}

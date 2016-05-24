@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "babel-core": "^5.8.38",
+    "jquery": "^2.2.4",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}

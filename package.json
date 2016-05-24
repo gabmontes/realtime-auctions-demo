@@ -1,0 +1,27 @@
+{
+  "name": "realtime-auctions-demo",
+  "description": "Demo of a realtime auctions platform using Express, Socket.IO and React",
+  "license": "WTFPL",
+  "author": "Gabriel Montes <gabriel@utoctadel.com.ar>",
+  "main": "server.js",
+  "repository": "gabmontes/realtime-auctions-demo",
+  "scripts": {
+    "postinstall": "cd public && npm install && cd ..",
+    "prestart": "npm install",
+    "start": "node server",
+    "start:watch": "forever -w server.js",
+    "checks:lint": "eslint --ext .js,.jsx .",
+    "checks:deps": "dependency-check package.json && dependency-check package.json --unused --no-dev",
+    "checks": "npm run checks:lint && npm run checks:deps"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.6"
+  },
+  "devDependencies": {
+    "eslint": "^2.10.2",
+    "eslint-plugin-react": "^5.1.1",
+    "forever": "^0.15.1",
+    "dependency-check": "^2.5.1"
+  }
+}
